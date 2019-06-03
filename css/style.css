@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.vh {
+    display: grid;
+    grid-template-columns: fit-content(100%) auto;
+    align-items: center;
+    overflow: hidden;
+}
+
+.depan-kanan {
+    display: flex;
+    align-items: center;
+}
+
+.elemen-depan {
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background: ghostwhite;
+    max-width: 150px;
+    min-width: 110px;
+}
+
+.elemen-depan h5 {
+    margin: 15px 0px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.elemen-depan button {
+    background: none;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.elemen-depan button:hover {
+    background: #2d3745;
+    color: ghostwhite;
+}
+
+.banner img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.banner {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#banner {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+#banner div {
+    position: absolute;
+    top: 0;
+    transform: translateY(0px);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100vh;
+}
+
+.tatacv {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 25px;
+    column-gap: 15px;
+}
+
+.profile-cv {
+    background-color: #292513;
+}
+
+.tatacv h2 {
+    text-align: center;
+    margin: 70px;
+    letter-spacing: 4px;
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+    grid-column: span 2;
+    color: ghostwhite;
+}
+
+.profile-cv .pp {
+    width: 220px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.isi-profile {
+    color: whitesmoke;
+}
+
+.isi-profile h3, .isi-profile p {
+    margin-bottom: 10px;
+}
+
+.isi-profile h3 {
+    letter-spacing: 1px;
+}
+
+.isi-profile > p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.isi-profile > a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: 200%;
+    margin: 5px;
+}
+
+.Experiences-cv {
+    background-color: #eccc35;
+    color: black;
+}
+
+.Experiences-cv h3 {
+    text-align: center;
+    letter-spacing: 1px;
+    grid-column: span 2;
+    border-bottom: 1px solid;
+    margin: 0px 40% 50px;
+    padding: 20px;
+}
+
+.edu {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 10px;
+    grid-column: span 2;
+    padding: 0 15%;
+}
+
+.edu div img {
+    width: 70%;
+}
+
+.edu div {
+    text-align: center;
+}
+
+.Experiences-cv h2 {
+    color: black;
+}
+
+.kemampuan-cv {
+    background-color: #dfddc7;
+    color: #633220;
+    padding: 50px 100px;
+}
+
+.kemampuan-cv h2 {
+    color: #633220;
+}
+
+.kemampuan-cv h3 {
+    grid-column: span 2;
+    border-bottom: 1px solid;
+    padding: 20px;
+    margin-right: 80%;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.kemampuan-cv div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 15px;
+}
+
+.contact-cv {
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.kemampuan-cv div section {
+    text-align: end;
+    transition-duration: 0.17s;
+}
+
+.kemampuan-cv div section:hover {
+    letter-spacing: 1.3px;
+}
+
+.work-cv {
+    background-color: ghostwhite;
+    margin-bottom: 242px;
+}
+
+.work-cv h2 {
+    color: #232323;
+}
+
+#spybar {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+    background-color: #232323;
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.menu > a {
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 5px;
+    color: ghostwhite;
+}
+
+.activebtn{
+    background-color: ghostwhite;
+    color: #232323 !important;
+}
+
+#projects div {position: relative;}
+
+#projects div img {
+    width: 100%;
+}
+
+#projects div section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background: #f5f5dcd9;
+    text-align: center;
+    padding: 30px 0;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+#projects div:hover section{
+    opacity:1;
+}
