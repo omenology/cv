@@ -77,7 +77,7 @@ body{
     position: absolute;
     top: 0;
     transform: translateY(0px);
-    background-position: center !important;
+    background-position: center bottom !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     width: 100%;
