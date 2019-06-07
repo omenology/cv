@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+   
 }
 
 .container {
@@ -88,12 +88,13 @@ body{
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 25px;
-    column-gap: 15px;
+    gap: 15px;
 }
 
-.profile-cv {
-    background-color: #292513;
+.span2 {
+    grid-column: span 2;
 }
+
 
 .tatacv h2 {
     text-align: center;
@@ -103,6 +104,15 @@ body{
     padding-bottom: 20px;
     grid-column: span 2;
     color: ghostwhite;
+}
+
+.tatacv h3 {
+    grid-column: span 2;
+    letter-spacing: 1px;
+}
+
+.profile-cv {
+    background-color: #292513;
 }
 
 .profile-cv .pp {
@@ -142,18 +152,15 @@ body{
 
 .Experiences-cv h3 {
     text-align: center;
-    letter-spacing: 1px;
-    grid-column: span 2;
-    border-bottom: 1px solid;
-    margin: 0px 40% 50px;
+    margin: 0px 35% 50px;
     padding: 20px;
+    border-bottom: 1px solid;
 }
 
 .edu {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     column-gap: 10px;
-    grid-column: span 2;
     padding: 0 15%;
 }
 
@@ -180,12 +187,10 @@ body{
 }
 
 .kemampuan-cv h3 {
-    grid-column: span 2;
-    border-bottom: 1px solid;
     padding: 20px;
     margin-right: 80%;
-    letter-spacing: 1px;
     margin-bottom: 25px;
+    border-bottom: 1px solid;
 }
 
 .kemampuan-cv div {
@@ -199,6 +204,7 @@ body{
     bottom: 0;
     z-index: -1;
     width: 100%;
+     background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
 }
 
 .kemampuan-cv div section {
@@ -245,6 +251,11 @@ body{
     color: ghostwhite;
 }
 
+.menu > a:hover {
+    outline :#eccc35 2px solid;
+    outline-style:auto;
+}
+
 .activebtn{
     background-color: ghostwhite;
     color: #232323 !important;
@@ -270,4 +281,55 @@ body{
 
 #projects div:hover section{
     opacity:1;
+}
+
+#projects .lainya {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+}
+
+#projects i {
+    margin-right: 10px;
+    font-size: 200%;
+}
+
+#projects a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #232323;
+    padding: 5px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+
+#projects a:hover {
+    background-color: #232323;
+    color: ghostwhite;
+}
+
+@media(max-width: 576px){
+    .tatacv {
+         grid-template-columns: 100%;
+    }
+
+    .tatacv h2, .tatacv h3, .span2 {
+        grid-column: span 1;
+    }
+
+    .edu {
+        grid-template-columns: 50% 50%;
+        grid-gap: 15px;
+    }
+
+    .kemampuan-cv {
+        padding: 50px 25px;
+    }
+
+    .kemampuan-cv h3 {
+        margin-right: 0;
+        text-align: center;
+    }
 }

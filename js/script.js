@@ -1,9 +1,8 @@
 $(document).ready(function() {
 	$(window).scroll(function() {
-		$("#banner div")[1].style.transform = 'translateY('+$(this).scrollTop()/3+'px)'
-		$("#banner div")[2].style.transform = 'translateY('+$(this).scrollTop()/5+'px)'
-		$("#banner div")[3].style.transform = 'translateY('+$(this).scrollTop()/7+'px)'
-		$("#banner div")[4].style.transform = 'translateY('+$(this).scrollTop()/10+'px)'
+		for(var i = 1;i<=4;i++){
+			$("#banner div")[i].style.transform = 'translateY('+$(this).scrollTop()/(i+i+1)+'px)'	
+		}
 		if($(this).scrollTop()>=$(window).height()/2){
 			$("#spybar").slideDown()
 		}else if ($(this).scrollTop()<$(window).height()/2) {

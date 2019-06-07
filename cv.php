@@ -42,7 +42,7 @@
 			<div id="experience" class="Experiences-cv tatacv">
 				<h2>Experiences</h2>
 				<h3>Education</h3>
-				<div class="edu">
+				<div class="edu span2">
 					<div>
 						<img src="img/logosd.png">
 						<p>SDN 3 Maripari (2007) - SDN 3 Sukawening (2010)</p>
@@ -278,8 +278,19 @@
 						<p>Personal Project pembuatan Cv</p>
 					</section>
 				</div>
+				<div>
+					<img src="img/galeri.png">
+					<section>
+						<h3>Galery Photo</h3>
+						<p>Personal Project pembuatan galeri</p>
+					</section>
+				</div>
+				<div class="lainya span2">
+					<a href=""><i class="fab fa-github"></i><h3>Project lainya</h3></a>
+				</div>
 			</div>
-			<div id="contact" class="contact-cv tatacv">
+			<div id="contact" ></div>
+			<div class="contact-cv tatacv">
 				<h2>Contact</h2>
 			</div>
 		</div>
